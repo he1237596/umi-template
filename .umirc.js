@@ -7,7 +7,8 @@ export default {
       path: '/',
       component: '../layouts/index',
       routes: [
-        { path: '/', component: '../pages/index' }
+        { path: '/', component: '../pages/index' },
+        { path: '/test/ref', component: '../pages/demo/ref' }
       ]
     }
   ],
