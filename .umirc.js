@@ -8,7 +8,8 @@ export default {
       component: '../layouts/index',
       routes: [
         { path: '/', component: '../pages/index' },
-        { path: '/test/ref', component: '../pages/demo/ref' }
+        { path: '/test/ref', component: '../pages/demo/ref' },
+        { path: '/test/interval', component: '../pages/demo/interval' }
       ]
     }
   ],
