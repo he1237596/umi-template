@@ -1,4 +1,5 @@
-import { useState, useCallback, useEffect, forwardRef, useImperativeHandle, useRef } from 'react'
+import { useState, useCallback, forwardRef, useImperativeHandle, useRef } from 'react'
+// 父子实时共享数据的一种写法
 // 通常数据流是从上到下，可以在子组件里改变父组件的数据
 function TextInputWithFocusButton() {
   const [value, setValue] = useState("");
