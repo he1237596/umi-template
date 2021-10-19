@@ -2,7 +2,7 @@
  * @Author: Chris
  * @Date: 2021-05-07 09:50:26
  * @LastEditors: Chris
- * @LastEditTime: 2021-05-19 09:49:54
+ * @LastEditTime: 2021-10-19 18:32:05
  * @Descripttion: **
  */
 import React from 'react';
@@ -30,20 +30,20 @@ const columns = [
 ];
 
 const Test = () => {
-    const params = useTableHandler({
-      getList: () => {}
-    });
+  const params = useTableHandler({
+    getList: () => { }
+  });
 
-    return (
-      <Table
-        size='small'
-        columns={columns}
-        rowKey={record => record.login.uuid}
-        {
-          ...params
-        }
-      />
-    );
+  return (
+    <Table
+      size='small'
+      columns={columns}
+      rowKey={record => record.login.uuid}
+      {
+      ...params
+      }
+    />
+  );
 }
 
 export default Test

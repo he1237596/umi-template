@@ -2,7 +2,7 @@
  * @Author: Chris
  * @Date: 2021-05-18 10:56:06
  * @LastEditors: Chris
- * @LastEditTime: 2021-10-18 16:37:58
+ * @LastEditTime: 2021-10-19 18:32:09
  * @Descripttion: **
  */
 import React, { useCallback, useEffect, useState } from 'react';
@@ -15,8 +15,8 @@ const useTableHandler = () => {
     total: 0,
   });
   const [pagination, setPagination] = useState({
-      results: 10, // 每页条数
-      current: 1,
+    results: 10, // 每页条数
+    current: 1,
   })
 
   const handleTableChange = (current, size) => {
@@ -64,6 +64,7 @@ const useTableHandler = () => {
       total: data.total,
       onShowSizeChange: changePageSize,
       onChange: handleTableChange,
+      showQuickJumper: true,
       showSizeChanger: true,
       pageSizeOptions: ['10', '20', '30', '40', '100'], // 每页显示条数的选项
       // showSizeChanger: true, // 是否显示每页条数修改
